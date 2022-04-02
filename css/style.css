@@ -8,9 +8,10 @@ body {
     background: radial-gradient(46.67% 42.46% at 43.48% 27%, rgba(46, 217, 255, 0.3888) 6.25%, rgba(45, 106, 255, 0.54) 60.69%, rgba(43, 100, 243, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #2B64F3;
 }
 .main {
+    position: relative;
     background-image: url("../img/ramka.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     background-origin: content-box;
     width: 100%;
@@ -87,23 +88,9 @@ body {
     border: none;
     margin-left: 10px;
 }
-.ellipse_bg {
-    z-index: -1;
-    position: absolute;
-    width: 646px;
-    height: 646px;
-    left: 464px;
-    top: -27px;
-    background: radial-gradient(50% 50% at 50% 50%, #70F6FF 0%, #3492FF 100%);
-    opacity: 0.66;
-    filter: blur(218px);
-}
-
 
 @media only screen and (max-width: 767px) {
-   .ellipse_bg {
-       display: none;
-   }
+
     .main {
         background-size: cover;
     }
