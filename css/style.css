@@ -31,7 +31,7 @@ body {
     width: 90%;
 }
 .test {
-
+    margin-top: -7vh;
 }
 .title {
     font-family: 'Manrope';
@@ -86,8 +86,27 @@ body {
     padding: 13.2974px 31.4705px 13.2974px 31.9138px;
     border: none;
     margin-left: 10px;
+
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19.0348px;
+    line-height: 124.1%;
+    color: #393939;
 }
 
+.logo {
+    position: absolute;
+    z-index: 999;
+    left: 4.72%;
+    top: 4.3%;
+}
+@media only screen and (min-width: 1300px) {
+    .test {
+        margin-top: -16vh;
+    }
+}
 @media only screen and (max-width: 767px) {
 
     .main {
@@ -134,5 +153,6 @@ body {
     .buttons button {
         margin-bottom: 10px;
         width: 100%;
+        height: 46px;
     }
 }
