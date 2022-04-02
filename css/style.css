@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: radial-gradient(46.67% 42.46% at 43.48% 27%, rgba(46, 217, 255, 0.3888) 6.25%, rgba(45, 106, 255, 0.54) 60.69%, rgba(43, 100, 243, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #2B64F3;
+}
+.main {
+    background-image: url("../img/ramka.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-origin: content-box;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 65%;
+    height: 80%;
+}
+.container .plane {
+    width: 70%;
+    height: 400px;
+}
+.plane img {
+    width: 90%;
+}
+.test {
+
+}
+.title {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    margin: 0;
+    font-size: 69.0013px;
+    line-height: 67px;
+    color: #FFFFFF;
+}
+.subtitle {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20.6211px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+}
+.buttons {
+    display: flex;
+}
+.phone {
+    background: #FFFFFF;
+    border: 0.396559px solid #B0B0B0;
+    box-sizing: border-box;
+    border-radius: 97.5535px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 296.53px;
+    height: 67.32px;
+    padding: 13.2974px 31.4705px 13.2974px 31.9138px;
+
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17.4486px;
+    line-height: 124.1%;
+
+    color: #B0B0B0;
+}
+.holiday {
+    background: #FFE966;
+    border-radius: 97.5535px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 296.53px;
+    height: 67.32px;
+    padding: 13.2974px 31.4705px 13.2974px 31.9138px;
+    border: none;
+    margin-left: 10px;
+}
+.ellipse_bg {
+    z-index: -1;
+    position: absolute;
+    width: 646px;
+    height: 646px;
+    left: 464px;
+    top: -27px;
+    background: radial-gradient(50% 50% at 50% 50%, #70F6FF 0%, #3492FF 100%);
+    opacity: 0.66;
+    filter: blur(218px);
+}
+
+
+@media only screen and (max-width: 767px) {
+   .ellipse_bg {
+       display: none;
+   }
+    .main {
+        background-size: cover;
+    }
+    .title {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 112.6%;
+        /* or 27px */
+
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+    .subtitle {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 135.6%;
+        /* or 19px */
+
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .container {
+        width: 90%;
+    }
+    .container .plane {
+        margin-top: 50px;
+        width: 130%;
+        height: auto;
+        margin-left: -47%;
+    }
+    .buttons button {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
